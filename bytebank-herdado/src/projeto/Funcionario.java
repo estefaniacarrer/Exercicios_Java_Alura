@@ -1,6 +1,7 @@
 package projeto;
 
-public class Funcionario {
+//nao posso instaciar essa classe pq é abstrata
+public abstract class Funcionario {
 	
 	private String nome;
 	private String cpf;
@@ -9,9 +10,8 @@ public class Funcionario {
 	public Funcionario() {
 	}
 	
-	public double getBonificacao() {
-		return this.salario * 0.05;
-	}
+	//metódo sem implementação
+	public abstract double getBonificacao();
 	
 	public String getNome() {
 		return nome;

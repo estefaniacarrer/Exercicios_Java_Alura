@@ -1,4 +1,13 @@
-package projeto.conta;
+package br.com.bytebank.banco.modelo;
+
+/**
+ * 
+ * Classe que representa um cliente no Bytebank
+ * 
+ * @author estef
+ * @version 0.1
+ */
+
 
 public class Cliente {
 	

@@ -1,19 +1,16 @@
 package projeto;
 
-//Gerente é um funcionario. Ele herda da classe Funcionario
-//assina o contrato Autenticavel
+public class Administrador extends Funcionario implements Autenticavel {
 
-public class Gerente extends Funcionario implements Autenticavel {
- 
 	private AutenticacaoUtil autenticador;
-
-	public Gerente() {
+	
+	public Administrador() {
 		this.autenticador = new AutenticacaoUtil();
 	}
-		
+	
+	@Override
 	public double getBonificacao() {
-		System.out.println("Chamando o método de bonificacao do GERENTE");
-		return super.getSalario();
+		return 50;
 	}
 	
 	@Override
@@ -26,5 +23,5 @@ public class Gerente extends Funcionario implements Autenticavel {
 		return this.autenticador.autentica(senha);
 		
 	}
-	
+
 }
